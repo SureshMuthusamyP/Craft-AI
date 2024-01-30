@@ -9,7 +9,7 @@ load_dotenv()
 
 # Processor class for handling text generation
 class Processor():
-    def __init__(self, API_KEY: None|str = None) -> None:
+    def __init__(self, API_KEY: str = None) -> None:
         # If API_KEY is not provided, attempt to retrieve it from environment variables
         if API_KEY is None:
             API_KEY = os.getenv("API_KEY")
